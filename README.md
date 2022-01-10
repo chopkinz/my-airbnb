@@ -1,7 +1,8 @@
 # Airbnb clone
 
-My own version of Airbnb, built using React.js, Next.js, TailwindCSS, SSG, API ...
-- live app: https://my-airbnb-3bfhdfv30-chopkinz.vercel.app/
+My own version of Airbnb, built using React.js, Next.js, TailwindCSS, Mapbox, SSG, SSR (API endpoints)
+
+- Link to the app -> https://my-airbnb-3bfhdfv30-chopkinz.vercel.app/
 
 # Next.js + Tailwind CSS Example
 

@@ -26,7 +26,7 @@ export default function Home({ exploreData, cardsData }) {
             Inspiration for future getaways
           </h2>
 
-          {/* pull images from server using server-side rendering -> API endpoints */}
+          {/* pull images from server using server-side rendering (SSR) -> API endpoints */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {exploreData?.map(({ img, distance, location }) => (
               <SmallCard
