@@ -10,7 +10,7 @@ export default function Home({ exploreData, cardsData }) {
   return (
     <div>
       <Head>
-        <title>🅱️n🅱️</title>
+        <title>not Airbnb</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
