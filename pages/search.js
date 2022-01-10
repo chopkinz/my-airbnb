@@ -7,6 +7,8 @@ import format from "date-fns/format";
 function Search({ searchResults }) {
   const router = useRouter();
 
+  console.log(searchResults);
+
   const { location, startDate, endDate, numberOfGuests } = router.query;
 
   const formattedStartDate = format(new Date(startDate), "MMMM dd yyyy");
@@ -38,8 +40,9 @@ function Search({ searchResults }) {
           </div>
           <div className="flex flex-col">
             {searchResults.map(
-              ({ img, location, title, description, star, price, total }) => {
+              ({ img, location, title, description, star, price, total }) => (
                 <InfoCard
+                  key={img}
                   img={img}
                   location={location}
                   title={title}
@@ -47,8 +50,8 @@ function Search({ searchResults }) {
                   star={star}
                   price={price}
                   total={total}
-                />;
-              }
+                />
+              )
             )}
           </div>
         </section>
@@ -67,9 +70,10 @@ export async function getServerSideProps() {
   const searchResults = await fetch("https://links.papareact.com/isz").then(
     (res) => res.json()
   );
+
   return {
     props: {
-      searchResults,
+      searchResults: searchResults,
     },
   };
 }

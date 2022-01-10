@@ -69,14 +69,14 @@ export default function Header({ placeholder }) {
           onChange={(e) => setSearchInput(e.target.value)}
           className="flex-grow pl-5 bg-transparent outline-none text-sm text-gray-600 placeholder-gray-400"
           type="text"
-          placeholder={placeholder || "start your search"}
+          placeholder={placeholder || "Where are you going?"}
         />
         <SearchIcon className="hidden md:inline-flex h-8 bg-red-400 text-white rounded-full p-2 cursor-pointer md:mx-2" />
       </div>
 
       {/* right box */}
       <div className="hidden items-center sm:inline-flex space-x-4 justify-end text-gray-500 cursor-pointer">
-        <p className="inline cursor-pointer ">become a host</p>
+        <p className="inline cursor-pointer ">Become a Host</p>
         <GlobeAltIcon className="h-6 cursor-pointer" />
 
         <div className="flex items-center space-x-2 border-2 p-2 rounded-full">
