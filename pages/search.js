@@ -1,6 +1,7 @@
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import InfoCard from "../components/infocard/InfoCard";
+import Map from "../components/map/Map";
 import { useRouter } from "next/router";
 import format from "date-fns/format";
 
@@ -54,6 +55,9 @@ function Search({ searchResults }) {
               )
             )}
           </div>
+        </section>
+        <section className="hidden xl:inline-flex xl:min-w-[600px]">
+          <Map />
         </section>
       </main>
 

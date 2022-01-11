@@ -4,4 +4,8 @@ module.exports = {
   images: {
     domains: ["links.papareact.com"],
   },
+  env: {
+    mapbox_key:
+      "pk.eyJ1IjoiY2hvcGtpbnoiLCJhIjoiY2t5YWVpbDd5MDRwczJwbWsxY3doNmdkcCJ9.BM6TcnqdoOJNfXBpnzXhMg",
+  },
 };
