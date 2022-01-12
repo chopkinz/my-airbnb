@@ -14,7 +14,7 @@ function Map() {
       mapStyle="mapbox://styles/chopkinz/ckyaem6u000ia14p0h4itfvgu" // grab custom styles from mapbox
       mapboxApiAccessToken={process.env.mapbox_key} // grab key from environment
       {...viewport}
-      // updates UI on scroll using
+      // updates UI on scroll using viewport
       onViewportChange={(nextViewport) => setViewport(nextViewport)}
     />
   );
