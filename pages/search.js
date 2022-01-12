@@ -12,8 +12,8 @@ function Search({ searchResults }) {
 
   const { location, startDate, endDate, numberOfGuests } = router.query;
 
-  const formattedStartDate = format(new Date(startDate), "MMMM dd yyyy");
-  const formattedEndDate = format(new Date(endDate), "MMMM dd yyyy");
+  const formattedStartDate = format(new Date(startDate), "MMMM dd, yyyy");
+  const formattedEndDate = format(new Date(endDate), "MMMM dd, yyyy");
   const range = `${formattedStartDate} - ${formattedEndDate}`;
 
   return (
@@ -57,7 +57,7 @@ function Search({ searchResults }) {
           </div>
         </section>
         <section className="hidden xl:inline-flex xl:min-w-[600px]">
-          <Map />
+          <Map searchResults={searchResults} />
         </section>
       </main>
 
