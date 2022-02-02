@@ -10,12 +10,12 @@ export default function Home({ exploreData, cardsData }) {
   return (
     <div>
       <Head>
-        <title>not Airbnb</title>
+        <title>NOT actually Airbnb</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       {/* header goes here */}
-      <Header/>
+      <Header />
 
       {/* banner goes here */}
       <Banner className="bg-gray-800" />
